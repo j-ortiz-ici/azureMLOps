@@ -111,6 +111,7 @@ import os
 import tempfile
 import traceback
 
+mlflow.set_registry_uri('databricks-uc')
 from mlflow.tracking.client import MlflowClient
 
 client = MlflowClient(registry_uri="databricks-uc")
